@@ -101,11 +101,11 @@ namespace UniverseLib
 
                 // Run immediate setups which don't require any delay
                 UniversalBehaviour.Setup();
-                ReflectionUtility.Init();
-                //RuntimeHelper.Init();
+                //ReflectionUtility.Init();
+                RuntimeHelper.Init();
 
                 // Begin the startup delay coroutine
-                //RuntimeHelper.Instance.Internal_StartCoroutine(SetupCoroutine());
+                RuntimeHelper.Instance.Internal_StartCoroutine(SetupCoroutine());
 
                 Log($"Finished UniverseLib initial setup.");
             }
