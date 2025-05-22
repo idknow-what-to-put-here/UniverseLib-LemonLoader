@@ -101,7 +101,7 @@ namespace UniverseLib
 
                 // Run immediate setups which don't require any delay
                 UniversalBehaviour.Setup();
-                ReflectionUtility.Init(); //crashes here
+                //ReflectionUtility.Init(); //crashes here
                 RuntimeHelper.Init(); //freezes here
 
                 // Begin the startup delay coroutine
